@@ -1,4 +1,4 @@
-# 石家庄铁道大学官网新闻爬虫
+# 石家庄铁道大学官网新闻爬虫（23级金融学生留）
 
 本项目使用 **Playwright**、**Requests**、**BeautifulSoup** 等工具爬取 [石家庄铁道大学官网新闻网](https://xcbnew.stdu.edu.cn/news) 的新闻数据，包括标题、正文、字符数统计等，并支持多线程加速爬取。
 
@@ -24,4 +24,4 @@
 ```bash
 pip install playwright requests beautifulsoup4 lxml
 
-#石家庄铁道大学23级金融学生留
+
