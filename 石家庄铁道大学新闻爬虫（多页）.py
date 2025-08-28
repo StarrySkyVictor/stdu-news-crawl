@@ -1,5 +1,4 @@
-from playwright.sync_api import sync_playwright
-from lxml import etree  
+from playwright.sync_api import sync_playwright  
 import requests  
 from bs4 import BeautifulSoup  
 from concurrent.futures import ThreadPoolExecutor, as_completed  
@@ -47,4 +46,5 @@ with ThreadPoolExecutor(max_workers=20) as executor:  # 可以根据你的网络
 
 
 print(f'共{len(hrefs)}篇新闻。')
+
 
