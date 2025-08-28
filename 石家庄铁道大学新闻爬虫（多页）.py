@@ -12,7 +12,7 @@ with sync_playwright() as p:
     page = browser.new_page()
     page.goto(base_url, timeout=60000)
 
-    for i in range(3):# 爬取的页面
+    for i in range(3):# 爬取的页面数（以3页为例）
 
         links = page.locator('td[headers="categorylist_header_title"].list-title a').all()
         href = [link.get_attribute("href") for link in links if link.get_attribute("href")]
@@ -47,3 +47,4 @@ with ThreadPoolExecutor(max_workers=20) as executor:  # 可以根据你的网络
 
 
 print(f'共{len(hrefs)}篇新闻。')
+
