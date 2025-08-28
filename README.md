@@ -22,6 +22,4 @@
 
 安装依赖库：
 ```bash
-pip install playwright requests beautifulsoup4 lxml
-
-
+pip install playwright requests beautifulsoup4
