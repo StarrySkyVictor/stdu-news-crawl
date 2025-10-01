@@ -40,11 +40,12 @@ with ThreadPoolExecutor(max_workers=20) as executor:  # 可以根据你的网络
         title, time, text_content = future.result()  
         print(f'标题: {title}\n')  
         print(f'{time}\n')  
-        print(f'正文:\n{text_content[:20]}\n')  
+        print(f'正文:\n{text_content}\n')  
         print(f'共{len(text_content)}个字符')  
         print('-' * 135)  
 
 
 print(f'共{len(hrefs)}篇新闻。')
+
 
 
